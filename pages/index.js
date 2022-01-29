@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { BsArrowRightCircle } from 'react-icons/bs'
 
 
  // import Swiper JS
@@ -108,19 +109,19 @@ function AboutSection() {
               </p>
               <div className="flex mt-4 ml-10">
                 <Link href="/about">
-                  <a className="text-blue-600 block hover:text-red-700 transition-all">
-                    Подробнее о нас 
-                    <svg className="relative top-1 ml-4" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.164 6.05298L15.111 9.99998L11.164 13.947M5.913 9.99998H15.099M19.834 9.99998C19.834 15.1556 15.6546 19.335 10.499 19.335C5.34342 19.335 1.164 15.1556 1.164 9.99998C1.164 4.8444 5.34342 0.664978 10.499 0.664978C15.6546 0.664978 19.834 4.8444 19.834 9.99998Z" stroke="#2E57EA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <a className="text-blue-600 block group group-hover:text-red-700 items-center transition-all">
+                    <span className='group-hover:text-red-700 transition-all'>
+                      Подробнее о нас 
+                    </span>
+                    <BsArrowRightCircle className='text-blue-500 relative top-1 left-3 group-hover:text-red-700 transition-all' size={20}/>
                   </a>
                 </Link>
                 <Link href="/">
-                  <a className="text-blue-600 ml-10  hover:text-red-700 transition-all">   
-                    Экспорт
-                    <svg className="relative top-1 ml-4" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.164 6.05298L15.111 9.99998L11.164 13.947M5.913 9.99998H15.099M19.834 9.99998C19.834 15.1556 15.6546 19.335 10.499 19.335C5.34342 19.335 1.164 15.1556 1.164 9.99998C1.164 4.8444 5.34342 0.664978 10.499 0.664978C15.6546 0.664978 19.834 4.8444 19.834 9.99998Z" stroke="#2E57EA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <a className="text-blue-600 ml-10 group group-hover:text-red-700 transition-all"> 
+                    <span className='group-hover:text-red-700 transition-all'>
+                      Экспорт
+                    </span>  
+                    <BsArrowRightCircle className='text-blue-500 relative top-1 left-3 group-hover:text-red-700 transition-all' size={20}/>
                   </a>
                 </Link>
               </div>
@@ -140,7 +141,7 @@ function Products() {
       <container>
         <div className="max-w-screen-xl mx-auto flex grid sm:grid-cols-2 md:grid-cols-3 gap-6 font-sans mt-10 px-6">
 
-          <div className="w-full group rounded-xl bg-gray-100 hover:bg-blue-900 truncate mt-2">
+          <div className="w-full group rounded-xl bg-gray-100 hover:bg-blue-900 truncate mt-2 transition-all">
             <div className="header flex justify-between items-center p-10">
               <div>
                 <span className="text-gray-400 text-sm font-medium group-hover:text-gray-300">Продукция</span>
@@ -162,15 +163,13 @@ function Products() {
               <div className="text-center relative bottom-6 text-blue-500 cursor-pointer w-52 rounded-3xl pl-4 pr-20 pt-2 pb-4 mx-auto z-30 group-hover:text-white group-hover:bg-blue-600">
                 <a href="">
                   <span>Перейти в каталог</span>
-                  <svg className="relative top-1 ml-4" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.164 6.05298L15.111 9.99998L11.164 13.947M5.913 9.99998H15.099M19.834 9.99998C19.834 15.1556 15.6546 19.335 10.499 19.335C5.34342 19.335 1.164 15.1556 1.164 9.99998C1.164 4.8444 5.34342 0.664978 10.499 0.664978C15.6546 0.664978 19.834 4.8444 19.834 9.99998Z" stroke="#2E57EA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
+                  <BsArrowRightCircle className='text-blue-600 relative top-1 left-3' size={20}/>
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="w-full group rounded-xl bg-gray-100 hover:bg-blue-900 truncate mt-2">
+          <div className="w-full group rounded-xl bg-gray-100 hover:bg-blue-900 truncate mt-2 transition-all">
             <div className="header flex justify-between items-center p-10">
               <div>
                 <span className="text-gray-400 text-sm font-medium group-hover:text-gray-300">Продукция</span>
@@ -192,15 +191,13 @@ function Products() {
               <div className="text-center relative bottom-6 text-blue-500 cursor-pointer w-52 rounded-3xl pl-4 pr-20 pt-2 pb-4 mx-auto z-30 group-hover:text-white group-hover:bg-blue-600">
                 <a href="">
                   <span>Перейти в каталог</span>
-                  <svg className="relative top-1 ml-4" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.164 6.05298L15.111 9.99998L11.164 13.947M5.913 9.99998H15.099M19.834 9.99998C19.834 15.1556 15.6546 19.335 10.499 19.335C5.34342 19.335 1.164 15.1556 1.164 9.99998C1.164 4.8444 5.34342 0.664978 10.499 0.664978C15.6546 0.664978 19.834 4.8444 19.834 9.99998Z" stroke="#2E57EA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
+                  <BsArrowRightCircle className='text-blue-600 relative top-1 left-3' size={20}/>
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="w-full group rounded-xl bg-gray-100 hover:bg-blue-900  truncate mt-2">
+          <div className="w-full group rounded-xl bg-gray-100 hover:bg-blue-900  truncate mt-2 transition-all">
             <div className=" header flex justify-between items-center p-10">
               <div>
                 <span className="text-gray-400 text-sm font-medium group-hover:text-gray-300">Продукция</span>
@@ -220,9 +217,7 @@ function Products() {
               <div className="text-center relative bottom-6 text-blue-500 cursor-pointer w-52 rounded-3xl pl-4 pr-20 pt-2 pb-4 mx-auto z-30 group-hover:text-white group-hover:bg-blue-600">
                 <a href="">
                   <span>Перейти в каталог</span>
-                  <svg className="relative top-1 ml-4" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.164 6.05298L15.111 9.99998L11.164 13.947M5.913 9.99998H15.099M19.834 9.99998C19.834 15.1556 15.6546 19.335 10.499 19.335C5.34342 19.335 1.164 15.1556 1.164 9.99998C1.164 4.8444 5.34342 0.664978 10.499 0.664978C15.6546 0.664978 19.834 4.8444 19.834 9.99998Z" stroke="#2E57EA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
+                  <BsArrowRightCircle className='group-hover:hidden text-blue-600 relative top-1 left-3' size={20}/>
                 </a>
               </div>
             </div>
@@ -246,27 +241,19 @@ function AboutProduct() {
               <ul className="flex flex-wrap w-full">
                 <li className="w-72 ml-4 mb-20">
                   <p className="font-bold mb-4">Lorem Ipsum is simply</p>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                     when an unknown printer took a galley..</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 </li>
                 <li className="w-72 ml-4 mb-20">
                   <p className="font-bold mb-4">Lorem Ipsum is simply</p>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley..</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 </li>
                 <li className="w-72 ml-4 mb-20">
                   <p className="font-bold mb-4">Lorem Ipsum is simply</p>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley..</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 </li>
                 <li className="w-72 ml-4 mb-20">
                     <p className="font-bold mb-4">Lorem Ipsum is simply</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                      when an unknown printer took a galley..</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 </li>
               </ul>
           </div>

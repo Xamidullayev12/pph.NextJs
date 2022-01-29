@@ -1,5 +1,5 @@
 import styles from "/pages/catalog/catalog.module.css"
-
+import { MdOutlineLoupe } from 'react-icons/md'
 // import { Swiper, SwiperSlide } from "swiper/react";
 
 
@@ -23,9 +23,7 @@ import "swiper/css/navigation"
 
 
 // import Swiper core and required modules
-import SwiperCore, {
-    Pagination,Navigation
-} from 'swiper';
+import SwiperCore, {Pagination,Navigation} from 'swiper';
 
 // install Swiper modules
 SwiperCore.use([Pagination,Navigation]);
@@ -113,7 +111,7 @@ function CatalogCard(props) {
                 <img className="w-full h-full" src="/src/image/catalog/flacon-1/image-1.jpg" />
             </div>
             <div className="cursor-pointer text-center mt-4">
-                <h1 className="text-base font-bold">Флакон "Мика-5"</h1>
+                <h1 className="text-base font-bold">Флакон&nbsp;"Мика-5"</h1>
                 <h1 className="text-sm text-blue-500 font-normal">Артикул:06.009</h1>
             </div>
         </div>
@@ -128,10 +126,7 @@ function Flacon__1() {
             <div className="max-w-screen-xl mx-auto bg-black rounded-3xl mt-10">
                 <p className="relative">
                     <span className="absolute top-8 right-10">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="50" height="50" rx="25" fill="#F4F7FA"/>
-                            <path d="M28.334 28.335L32.999 33.001M30.334 23.507C30.334 27.278 27.277 30.335 23.506 30.335C19.735 30.335 16.678 27.278 16.678 23.507C16.678 19.736 19.735 16.679 23.506 16.679C27.277 16.679 30.334 19.736 30.334 23.507Z" stroke="#050505" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <MdOutlineLoupe className="text-gray-300 cursor-pointer" size={36}/>
                     </span>
                 </p>
                 <div className="sm:flex justify-between px-10 pt-10">
@@ -175,10 +170,7 @@ function Flacon__2() {
                     <div className="relative  mb-8 bg-white rounded-3xl md:w-11/12 w-full">
                         <p className="relative">
                             <span className="absolute top-8 right-10">
-                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="50" height="50" rx="25" fill="#F4F7FA"/>
-                                    <path d="M28.334 28.335L32.999 33.001M30.334 23.507C30.334 27.278 27.277 30.335 23.506 30.335C19.735 30.335 16.678 27.278 16.678 23.507C16.678 19.736 19.735 16.679 23.506 16.679C27.277 16.679 30.334 19.736 30.334 23.507Z" stroke="#050505" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                <MdOutlineLoupe className="text-gray-400 cursor-pointer" size={36}/>
                             </span>
                         </p>
                         <div className="mt-20">
@@ -222,10 +214,7 @@ function Flacon__3() {
             <div className="max-w-screen-xl mx-auto bg-black rounded-3xl mt-10">
                 <p className="relative">
                     <span className="absolute top-8 right-10">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="50" height="50" rx="25" fill="#F4F7FA"/>
-                            <path d="M28.334 28.335L32.999 33.001M30.334 23.507C30.334 27.278 27.277 30.335 23.506 30.335C19.735 30.335 16.678 27.278 16.678 23.507C16.678 19.736 19.735 16.679 23.506 16.679C27.277 16.679 30.334 19.736 30.334 23.507Z" stroke="#050505" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <MdOutlineLoupe className="text-gray-300 cursor-pointer" size={36}/>
                     </span>
                 </p>
                 <div className="sm:flex justify-between px-10 pt-10">
